@@ -1,0 +1,50 @@
+.menu-container{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 3px 10px;
+    color: #FF007F;
+    background-color: black;
+}
+
+.navegacion-principal {
+    display:flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700%;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: #FF007F;
+    border-radius: 5px;
+}
+
+.inicio{
+    background: url('Fondo.jpg') no-repeat center center fixed;
+    background-size: 1000px 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:450px;
+    position: relative;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.contenido-inicio{
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
