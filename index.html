@@ -4,125 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>MI PAGINA WEB</title>
 </head>
 <body>
     <header class="header">
         <div class="menu-container">
             <h1 class="titulo">Dayana</h1>
-
             <div class="nav-bg">
                 <nav class="navegacion-principal contenedor">
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
+                    <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="#sobre-mi"><i class="fas fa-user"></i> Sobre Mi</a>
+                    <a href="#habilidades"><i class="fas fa-laptop-code"></i> Habilidades</a>
+                    <a href="#portafolio"><i class="fas fa-briefcase"></i> Portafolio</a>
+                    <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="home">
-            Dayana Bazualdo <br>
-            Estudiante de la carrera de Ingeniería de Sistemas <br>
-            en la Mención Dirección y Gestión Empresarial. <br>
-        </div>
+        <section id="inicio" class="home">
+            <div class="contenido-home">
+                <p class="nombre">Dayana Bazualdo</p>
+                <p>Estudiante de la carrera de Ingeniería de Sistemas</p>
+                <p>en la Mención Dirección y Gestión Empresarial.</p>
+            </div>
 
-            <h2>About Me</h2>
+            <div class="imagen-home">
+                <img src="tu-imagen.jpg" alt="Dayana Bazualdo">
+            </div>
+        </section>
 
-            <section class="about-me">
-                ¡Hola! Soy Dayana Raquel Bazualdo Mamani, estudiante de Ingeniería de Sistemas, con 19 años y técnico medio en sistemas informáticos. Desde que me gradué como bachiller, supe que la tecnología era mi camino. Me apasiona el desarrollo web, la programación y la resolución de problemas tecnológicos.
-                Actualmente, tengo experiencia en HTML y CSS para la creación de páginas web y estoy aprendiendo JavaScript para hacerlas más dinámicas e interactivas. Además, me interesa el desarrollo de software y la gestión de bases de datos.
-                Soy una persona curiosa, analítica y con muchas ganas de seguir aprendiendo. Mi meta es especializarme en tecnologías que permitan desarrollar soluciones innovadoras y eficientes. 🚀
-                <br>
-            
-                <h3>Datos Personales</h3>
-                <strong>Ubicación:</strong> Oruro, Bolivia <br>
-                <strong>Github:</strong> Dayana-Raquel <br>
-                <strong>Cumpleaños:</strong> 23/04 <br>
-                <strong>Ocupación:</strong> Estudiante <br>
+        <section id="sobre-mi" class="about-me">
+            <h2>Sobre Mi</h2>
+            <p>
+                ¡Hola! Soy Dayana Raquel Bazualdo Mamani, estudiante de Ingeniería de Sistemas, con 19 años y técnico medio en sistemas informáticos. Me apasiona el desarrollo web, la programación y la resolución de problemas tecnológicos.
+            </p>
 
-                <h3>Intereses y pasatiempos</h3>
-                Tecnología y desarrollo web: Me encanta aprender sobre diseño web y nuevas tendencias digitales. <br>
-                Creatividad: Disfruto explorando el diseño gráfico y la estética visual.<br>
-                Lectura: Me gusta aprender a través de libros y artículos sobre desarrollo y tecnología.<br>
-                Videojuegos: Me inspiran los videojuegos y cómo combinan arte y programación.<br>
-                Música: Siempre trabajo mejor con una buena playlist de fondo.<br> 
-            </section>
+            <div class="contenido">
+                <div class="dato">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><strong>Ubicación:</strong> Oruro, Bolivia</li>
+                        <li><strong>Github:</strong> Dayana-Raquel</li>
+                        <li><strong>Cumpleaños:</strong> 23/04</li>
+                        <li><strong>Ocupación:</strong> Estudiante</li>
+                    </ul>
+                </div>
 
-            <section class="skills">
-                <h2>Skills</h2>
+                <div class="interes">
+                    <h3>Intereses y Pasatiempos</h3>
+                    <ul>
+                        <li><strong>Tecnología y desarrollo web:</strong> Me encanta aprender sobre diseño web y nuevas tendencias digitales.</li>
+                        <li><strong>Creatividad:</strong> Disfruto explorando el diseño gráfico y la estética visual.</li>
+                        <li><strong>Lectura:</strong> Me gusta aprender a través de libros y artículos sobre desarrollo y tecnología.</li>
+                        <li><strong>Videojuegos:</strong> Me inspiran los videojuegos y cómo combinan arte y programación.</li>
+                        <li><strong>Música:</strong> Siempre trabajo mejor con una buena playlist de fondo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                <h3>Skills</h3>
-                🤖 C++
-                ⌨ Java
-                💻 HTML  
-                🎨 CSS 
-                🎨 Photoshop
-                🖋️ Adobe InDesign
-                ✏️ Adobe Illustrator
-                ⚡ JavaScript - En aprendizaje  
-                🗄️ MySQL – En aprendizaje
-                🚀 Git, GitHub  
+        <section id="habilidades" class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>🤖 C++</li>
+                <li>⌨ Java</li>
+                <li>💻 HTML</li>
+                <li>🎨 CSS</li>
+                <li>🎨 Photoshop</li>
+                <li>🖋️ Adobe InDesign</li>
+                <li>✏️ Adobe Illustrator</li>
+                <li>⚡ JavaScript - En aprendizaje</li>
+                <li>🗄️ MySQL – En aprendizaje</li>
+                <li>🚀 Git, GitHub</li>
+            </ul>
 
-                <h3>Soft Skills</h3>
-                💡 Creatividad e innovación
-                🚀 Adaptabilidad y aprendizaje rápido
-                🤝 Trabajo en equipo  
-                🧠 Resolución de problemas   
-            </section>
+            <ul>
+                <li>💡Creatividad e innovación</li>
+                <li>🚀 Adaptabilidad y aprendizaje rápido</li>
+                <li>🤝 Trabajo en equipo</li>
+                <li>🧠 Resolución de problemas</li>   
+            </ul>
+        </section>
 
-            <section class="projects">
-               <h2>Portfolio</h2> 
-            </section>
+        <section id="portafolio" class="portfolio">
+            <h2>Portafolio</h2>
+        </section>
 
-            <section class="contact">
-                <h2>Contact</h2>
-                <form class="formulario">
-                    <fieldset>
-                        <legend>Contactame llenando todos los campos</legend>
-    
-                        <div class="contenedor-campos">
-    
-                            <div class="campo">
-                                <label>Nombre</label>
-                                <input class="input-text" type="text" placeholder="Tu Nombre" aria-label="Nombre">
-                            </div>
-    
-                            
-
-
-    
-                            <div class="campo">
-                                <label>Telefono</label>
-                                <input class="input-text" type="tel" placeholder="Tu Telefono">
-                            </div>
-    
-                            <div class="campo">
-                                <label>Correo</label>
-                                <input class="input-text" type="email" placeholder="Tu Email">
-                            </div>
-    
-                            <div class="campo">
-                                <label>Mensaje</label>
-                                <textarea class="input-text"></textarea>
-                            </div>
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>CONTÁCTAME LLENANDO TODOS LOS CAMPOS</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input class="input-text" type="text" id="nombre" placeholder="Tu Nombre">
                         </div>
-    
-                        
-                        <div class="alinear-derecha flex">
-                            <input class="boton w-100%" type="submit" value="Enviar">
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input class="input-text" type="tel" id="telefono" placeholder="Tu Teléfono">
                         </div>
-                
-                    </fieldset>
-                </form>
-            </section>
+                        <div class="campo">
+                            <label for="correo">Correo</label>
+                            <input class="input-text" type="email" id="correo" placeholder="Tu Email">
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="input-text" id="mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
-        <p>Todos los Derechos Reservados. Estudiante: Dayana Raquel Bazualdo Mamani</p>
+        <p>Estudiante: Dayana Raquel Bazualdo Mamani - 2025</p>
     </footer>
 </body>
 </html>
