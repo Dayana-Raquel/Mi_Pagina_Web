@@ -107,3 +107,124 @@ body {
     margin-left: 50px;
 }
     
+.about-me {
+    background-color: #1a1a1a;
+    color: #B0BEC5;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+    border: 2px solid #FF007F;
+}
+
+.about-me h2 {
+    color: #FF007F;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #00FFFF, #FF007F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dato h3, .interes h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(45deg, #FF007F, #00FFFF);
+    border-radius: 10px;
+    text-shadow: 2px 2px 10px rgba(255, 0, 127, 0.5);
+}
+
+.informacion-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.dato, .interes {
+    background-color: #222;
+    color: #B0BEC5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+    text-align: center;
+    max-width: 48%; 
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dato:hover, .interes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.dato ul, .interes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dato li, .interes li {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-left: 5px solid #FF007F;
+    background-color: rgba(255, 0, 127, 0.1);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dato li:hover, .interes li:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+    border-left: 5px solid #00FFFF;
+}
+
+.dato i, .interes i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #FF007F;
+    transition: color 0.3s ease-in-out;
+}
+
+.dato i:hover, .interes i:hover {
+    color: #00FFFF;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.interes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.card:hover {
+    background: #3a3a3a;
+}
+.card i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
