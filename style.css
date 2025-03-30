@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: #B0BEC5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
@@ -132,6 +132,17 @@ body {
     max-width: 100%;
     border-radius: 50%;
     border: 3px solid #FF007F;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+    }
+    
+.imagen-home img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6); 
+}
+
+.imagen-home img.loaded {
+    animation: pulse 1.5s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
@@ -219,28 +230,58 @@ body {
 }
 /*---*/
 
-    
-.about-me {
+ 
+
+.about-me, .skills, .portfolio, .contact{                          
     background-color: #1a1a1a;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-    text-align: center;
     max-width: 900px;
     margin: 40px auto;
     border: 2px solid #FF007F;
+    text-align: center;
 }
 
-.about-me h2 {
-    color: #FF007F;
+.about-me h2, .skills h2, .portfolio h2, .contact h2 {              
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-radius: 7px;
-    background: linear-gradient(135deg, #00FFFF, #FF007F);
+    background: linear-gradient(90deg, #6EA8DA, #A678C2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.mi-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.mi-foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #B0BEC5;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+    }
+    
+.mi-foto img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.6); 
+}
+
+.mi-foto img.load {
+    animation: pulse 1.5s ease-in-out;
 }
 
 .dato h3, .interes h3, .formacion h3, .superior h3 {
@@ -262,9 +303,9 @@ body {
 
 .dato, .interes {
     background-color: #222;
+    border-radius: 10px;
     color: #B0BEC5;
     padding: 30px;
-    border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
     text-align: center;
     max-width: 48%; 
@@ -272,17 +313,34 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.dato:hover, .interes:hover, .formacion:hover, .superior:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+
+.formacion, .superior {
+    margin: 20px;
+    padding: 30px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
-.dato ul, .interes ul {
+.dato:hover, .interes:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    transform: scale(1.05);
+
+}
+
+.formacion:hover, .superior:hover {
+    box-shadow: 0 0 20px #B39DDB;
+    transform: scale(1.05);
+}
+
+.dato ul, .interes ul, .formacion ul, .superior ul {
     list-style: none;
     padding: 0;
+    text-align: left;
 }
 
-.dato li, .interes li {
+.dato li, .interes li, .formacion li, .superior li {            
     font-size: 1.2rem;
     padding: 8px;
     border-left: 7px solid #FF007F;
@@ -292,7 +350,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.dato li:hover, .interes li:hover {
+.dato li:hover, .interes li:hover, .formacion li:hover, .superior li:hover{
     background-color: rgba(0, 255, 255, 0.2);
     border-left: 5px solid #0033FF;
 }
@@ -304,7 +362,7 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-.dato i:hover, .interes i:hover {
+.dato i:hover, .interes i:hover, .formacion i:hover, .superior i:hover {
     color: #00FFFF;
 }
 
@@ -313,16 +371,11 @@ body {
     margin: 50px auto;
 }
 
-h2 {
-    font-size: 24px;
-}
-
 .interes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     justify-content: center;
-
 }
 
 .interes-card {
@@ -340,95 +393,62 @@ h2 {
     background: #444;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 0, 127, 0.7);
-   
 }
 
-.iconos{
+.iconos-interes{
     margin-top: 10px;
     margin-left: 10px;
 }
 
-
 .interes-card p {
-    
     font-size: 0.9rem;
     color: #B0BEC5;
     font-weight: bold;
 }
 
-.formacion h3, .superior h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    text-shadow: 2px 2px 5px rgba(255, 0, 127, 0.5);
+.seminarios {
+    margin: 15px 0 0 50px;
+    padding: 0;
     position: relative;
 }
 
-.formacion h3::after, .superior h3::after {
-    content: '';
+.seminarios::before {
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #FF007F;
-    bottom: -10px;
-    left: 0;
+    left: -25px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #FF007F, #00FFFF);
+    border-radius: 3px;
 }
 
-.formacion ul, .superior ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    text-align: left;
-}
-
-.formacion li, .superior li {
-    font-size: 1.2rem;
-    padding: 10px;
-    margin-bottom: 15px;
-    color: #B0BEC5;
-    border-left: 5px solid #FF007F;
-    background-color: rgba(255, 0, 127, 0.1);
+.seminarios li {
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    background-color: rgba(176, 190, 197, 0.05);
+    border-radius: 5px;
+    border-left: none;
+    position: relative;
     transition: all 0.3s ease;
-    border-radius: 8px;
+    list-style-type: none;
 }
 
-
-.formacion li:hover, .superior li:hover {
-    background-color: rgba(0, 255, 255, 0.2);
-    border-left: 5px solid #0033FF;
-    transform: translateX(5px);
-}
-
-
-.formacion, .superior {
-    margin: 20px;
-    padding: 20px;
-    background: #1a1a1a;
-    color: #B0BEC5;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-}
-
-
-.formacion ul, .superior ul {
-    padding: 0 15px;
-}
-
-.formacion li, .superior li {
+.seminarios li::before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: #FF007F;
     font-size: 1.2rem;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-left: 5px solid #FF007F;
-    background-color: rgba(255, 0, 127, 0.1);
-    transition: all 0.3s ease-in-out;
 }
 
-
-.formacion li:hover, .superior li:hover {
-    background-color: rgba(0, 255, 255, 0.2);
-    border-left: 5px solid #0033FF;
+.seminarios li:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(255, 0, 127, 0.2);
 }
+
 
 .boton {
     display: inline-block;
