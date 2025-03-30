@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #1a1a1a;
     color: #B0BEC5;
@@ -71,36 +70,17 @@ body {
     z-index: 1;
 }
 
-.home p {
-    position: relative;
-    z-index: 2;
-    text-align: left;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    color: #B0BEC5;
-    margin-left: 20px;
-}
-
 .contenido-home {
     flex: 1;
-    text-align: left;
-    color: #B0BEC5;
-    font-size: 1.5rem;
-    margin-left: 50px;
+    text-align: left; 
+    margin-left: 100px;
     max-width: 600px;
     position: relative;
     z-index: 2;
 }
 
-.contenido-home h1 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #FF007F;
-    text-shadow: 2px 2px 5px rgba(255, 0, 127, 0.5);
-}
-
 .contenido-home p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 
@@ -108,7 +88,7 @@ body {
     width: 200px;
     border-radius: 50%;
     border: 3px solid #FF007F;
-    margin-left: 50px;
+    margin-right: 90px;
 }
 
 @media (max-width: 768px) {
@@ -138,7 +118,7 @@ body {
     
 .about-me {
     background-color: #1a1a1a;
-    color: #B0BEC5;
+
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
@@ -273,14 +253,6 @@ h2 {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-/* Título de sección con línea horizontal y estilo elegante */
 .formacion h3, .superior h3 {
     font-size: 1.8rem;
     text-align: center;
@@ -290,7 +262,6 @@ h2 {
     position: relative;
 }
 
-/* Línea horizontal debajo de los títulos */
 .formacion h3::after, .superior h3::after {
     content: '';
     position: absolute;
@@ -301,7 +272,6 @@ h2 {
     left: 0;
 }
 
-/* Estilo para los elementos de la formación académica */
 .formacion ul, .superior ul {
     list-style: none;
     padding: 0;
@@ -309,7 +279,6 @@ h2 {
     text-align: left;
 }
 
-/* Elementos de cada item en la formación académica */
 .formacion li, .superior li {
     font-size: 1.2rem;
     padding: 10px;
@@ -321,14 +290,14 @@ h2 {
     border-radius: 8px;
 }
 
-/* Hover en los elementos para destacar */
+
 .formacion li:hover, .superior li:hover {
     background-color: rgba(0, 255, 255, 0.2);
     border-left: 5px solid #0033FF;
     transform: translateX(5px);
 }
 
-/* Sombra suave para el contenedor general */
+
 .formacion, .superior {
     margin: 20px;
     padding: 20px;
@@ -338,7 +307,7 @@ h2 {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-/* Estilos para las listas dentro de la formación académica */
+
 .formacion ul, .superior ul {
     padding: 0 15px;
 }
@@ -352,9 +321,33 @@ h2 {
     transition: all 0.3s ease-in-out;
 }
 
-/* Efecto al hacer hover sobre los items */
+
 .formacion li:hover, .superior li:hover {
     background-color: rgba(0, 255, 255, 0.2);
     border-left: 5px solid #0033FF;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF007F; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+
+  .boton:hover {
+    background-color: #D6006E;
+    transform: scale(1.05);
+  }
+
+  .boton:active {
+    transform: scale(0.95);
+  }
