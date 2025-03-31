@@ -476,3 +476,107 @@ body {
   }
 
 
+
+@media (max-width: 1024px) {
+    .about-me, .skills, .portfolio, .contact {
+        padding: 40px;
+        margin: 30px auto;
+    }
+    .formacion, .superior {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .informacion-container {
+        flex-direction: column;
+    }
+    .dato, .interes {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .skills ul {
+        columns: 2;
+        column-gap: 30px;
+    }
+    .seminarios {
+        margin-left: 30px;
+    }
+    .seminarios::before {
+        left: -15px;
+    }
+    .contenedor-campos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 740px) and (min-height: 360px) {
+    .interes-grid {
+        grid-template-columns: repeat(2, minmax(110px, 1fr));
+        gap: 12px;
+    }
+    .interes-card {
+        width: 100%;
+        padding: 8px 5px;
+        box-sizing: border-box;
+    }
+    .interes-card p {
+        font-size: 0.82rem;
+    }
+    .mi-foto img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mi-foto img {
+        width: 180px;
+        height: 180px;
+    }
+    .skills ul {
+        columns: 1;
+    }
+    .seminarios {
+        margin-left: 20px;
+    }
+    .seminarios li {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+    .boton {
+        width: 100%;
+        padding: 12px;
+    }
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .about-me h2, .skills h2, .portfolio h2, .contact h2 {
+        font-size: 2rem;
+    }
+    .dato h3, .interes h3, .formacion h3, .superior h3 {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+    .interes-grid {
+        grid-template-columns: 1fr;
+    }
+    .interes-card {
+        max-width: 140px;
+        margin: 0 auto;
+    }
+    .seminarios li::before {
+        left: -15px;
+        font-size: 1rem;
+    }
+    .nombre {
+        font-size: 1.8rem;
+    }
+    .contenido-home p {
+        font-size: 1.1rem;
+    }
+}
