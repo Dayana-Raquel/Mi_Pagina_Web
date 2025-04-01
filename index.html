@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <title>MI PAGINA WEB</title>
+    <title>MI PÁGINA WEB</title>
 </head>
 <body>
     <header class="header">
@@ -145,60 +144,83 @@
         </section>
 
         <section id="habilidades" class="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>🤖 C++</li>
-                <li>⌨ Java</li>
-                <li>💻 HTML</li>
-                <li>🎨 CSS</li>
-                <li>🎨 Photoshop</li>
-                <li>🖋️ Adobe InDesign</li>
-                <li>✏️ Adobe Illustrator</li>
-                <li>⚡ JavaScript - En aprendizaje</li>
-                <li>🗄️ MySQL – En aprendizaje</li>
-                <li>🚀 Git, GitHub</li>
-            </ul>
-
-            <ul>
-                <li>💡Creatividad e innovación</li>
-                <li>🚀 Adaptabilidad y aprendizaje rápido</li>
-                <li>🤝 Trabajo en equipo</li>
-                <li>🧠 Resolución de problemas</li>   
-            </ul>
+            <h2>Mis Habilidades</h2>
+            <div class="skills-cloud">
+                <div class="skill-group" style="--accent-color: #FF007F;">
+                    <h3><i class="fas fa-microchip"></i> Tecnológicas</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">🤖 C++</span>
+                        <span class="skill-tag">⌨ Java</span>
+                        <span class="skill-tag">💻 HTML</span>
+                        <span class="skill-tag">🎨 CSS</span>
+                        <span class="skill-tag">⚡ JavaScript <em>(aprendiendo)</em></span>
+                        <span class="skill-tag">🗄️ MySQL <em>(aprendiendo)</em></span>
+                        <span class="skill-tag">🚀 Git/GitHub <em>(aprendiendo)</em></span>
+                    </div>
+                </div>
+                
+                <div class="skill-group" style="--accent-color: #00FFFF;">
+                    <h3><i class="fas fa-brain-circuit"></i> Creativas</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">🎨 Photoshop</span>
+                        <span class="skill-tag">🖋️ Adobe InDesign</span>
+                        <span class="skill-tag">✏️ Adobe Illustrator</span>
+                        <span class="skill-tag">💡 Creatividad e innovación</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group" style="--accent-color: #B0BEC5;">
+                    <h3><i class="fas fa-people-group"></i> Sociales</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">🚀 Adaptabilidad y aprendizaje rápido</span>
+                        <span class="skill-tag">🤝 Trabajo en equipo</span>
+                        <span class="skill-tag">🧠 Resolución de problemas</span>
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <section id="portafolio" class="portfolio">
             <h2>Portafolio</h2>
         </section>
 
-        <section id="contacto" class="contact">
-            <h2>Contacto</h2>
-            <form class="formulario">
-                <fieldset>
-                    <legend>CONTÁCTAME LLENANDO TODOS LOS CAMPOS</legend>
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label for="nombre">Nombre</label>
-                            <input class="input-text" type="text" id="nombre" placeholder="Tu Nombre">
-                        </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input class="input-text" type="tel" id="telefono" placeholder="Tu Teléfono">
-                        </div>
-                        <div class="campo">
-                            <label for="correo">Correo</label>
-                            <input class="input-text" type="email" id="correo" placeholder="Tu Email">
-                        </div>
-                        <div class="campo">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea class="input-text" id="mensaje"></textarea>
+        <section id="contact" class="contact">
+            <div class="contenedor-contacto">
+                <h2>CONTACTO</h2>
+                
+                <form class="formulario-contacto">
+                    <div class="grupo-campo">
+                        <label>Nombre</label>
+                        <div class="contenedor-input">
+                            <input type="text" placeholder="Tu Nombre">
                         </div>
                     </div>
-                    <div class="alinear-derecha flex">
-                        <input class="boton w-100" type="submit" value="Enviar">
+                    
+                    <div class="grupo-campo">
+                        <label>Email</label>
+                        <div class="contenedor-input">
+                            <input type="email" placeholder="Tu Email">
+                        </div>
                     </div>
-                </fieldset>
-            </form>
+        
+                    <div class="grupo-campo">
+                        <label>Teléfono</label>
+                        <div class="contenedor-input">
+                            <input type="tel" placeholder="Tu telefono">
+                        </div>
+                    </div>
+                         
+                    <div class="grupo-campo">
+                        <label>Mensaje</label>
+                        <div class="contenedor-input">
+                            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="boton-enviar">ENVIAR</button>
+                </form>
+            </div>
         </section>
     </main>
 
