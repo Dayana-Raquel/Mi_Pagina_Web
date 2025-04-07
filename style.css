@@ -73,7 +73,7 @@ body {
 
 .home {
     position: relative;
-    background: url(Fondo1.jpg) no-repeat center center fixed;
+    background: url(images/Fondo.jpg) no-repeat center center fixed;
     background-size: cover;
     min-height: 50vh;
     margin-bottom: 2rem;
@@ -726,6 +726,168 @@ body {
         -webkit-transform: translateZ(0); 
     }
 }
+
+/*PORTAFOLIO*/
+.portfolio {
+    padding: 4rem 2rem;
+    background: #111; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio h2 {
+    color: #00FFFF;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #00FFFF;
+    margin: 0.5rem auto 0;
+}
+
+.project-card {
+    width: 100%; /*bien*/
+    max-width: 450px; /*bien*/
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    background: #1a1a1a;
+    margin: 0 auto;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 85%;
+    height: 75%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    color: #00FFFF;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tech span {
+    display: inline-block;
+    background: #00FFFF;
+    color: #111;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-link {
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Reemplaza estas clases en tu CSS */
+.project-link a {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF007F, #00FFFF);
+    color: #111;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+    margin-top: 1rem;
+}
+
+.project-link a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 0, 127, 0.4);
+    background: linear-gradient(135deg, #D6006E, #00D1D1);
+}
+
+.project-link a i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-link a:hover i {
+    transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 500px;
+    }
+    .project-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        max-width: 100%;
+    }
+    .project-image {
+        height: 250px;
+    }
+    .project-overlay h3 {
+        font-size: 1.5rem;
+    }
+} 
+
 
 
 /*CONTACTO*/
